@@ -5,11 +5,17 @@
     width: 100%;
     display: flex;
     align-items: center;
-    background-color: #000000;
+    background-color: #599bf3;
     color: #ffffff;
 }
 
-.footer .footer__content {
+.footer .content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     padding-left: 25px;
     padding-right: 25px;
+    font-size: 12px;
 }
+
+

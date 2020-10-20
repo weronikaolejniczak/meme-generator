@@ -1,18 +1,22 @@
 .header {
     display: flex;
     align-items: center;
-    padding-left: 25px;
-    padding-right: 25px;
+    justify-content: space-between;
+    width: calc(100% - 50px);
+    padding: 5px 25px;
     box-shadow: 0px 5px 5px #ddd;
 }
 
-/* .header__logo {} */
+.title-beginning {
+    letter-spacing: -5px;
+    color: #599bf3;
+}
 
-.header__menu ul {
+.my-links ul {
     display: flex;
     list-style: none;
 }
 
-.header__menu ul li {
+.my-links ul li {
     margin: 10px;
 }

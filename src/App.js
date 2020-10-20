@@ -6,12 +6,7 @@ import './App.css';
 
 /**
  * TODO:
- * - put 'top' and 'bottom' in a dictionary
  * - change and save username and password into .env
- * - create a gallery for meme templates
- * - style
- * - create routing for 'About' and 'Contact'
- * - credit https://imgflip.com/api
  */
 
 function App() {
@@ -68,11 +63,11 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="app">
       <Header />
 
-      <div className="App__main">
-        <div className="App__user-input">
+      <div className="main">
+        <div className="user-input">
           {templates && (
             <Templates
               templates={templates}
@@ -89,9 +84,9 @@ function App() {
           />
         </div>
 
-        <div className="App__meme">
+        <div className="meme-container">
           <h2>Generated meme</h2>
-          {meme && (<Meme source={meme.url} />)}
+          {meme ? (<Meme source={meme.url} />) : (<div className="placeholder" />)}
         </div>
       </div>
 

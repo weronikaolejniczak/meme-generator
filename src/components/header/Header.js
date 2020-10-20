@@ -4,15 +4,15 @@ import './style.css';
 const Header = () => {
     return (
         <header className="header">
-            <div className="header__logo">
-                <h1>Hello</h1>
+            <div className="logo">
+                <h1><span className="title-beginning">meme</span>generator</h1>
             </div>
-            <nav className="header__menu">
+            <div className="my-links">
                 <ul>
-                    <li>Hello</li>
-                    <li>World</li>
+                    <li>GitHub</li>
+                    <li>LinkedIn</li>
                 </ul>
-            </nav>
+            </div>
         </header>
     );
 }

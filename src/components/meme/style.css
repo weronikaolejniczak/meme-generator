@@ -1,1 +1,8 @@
-.meme {}
+.meme {
+    width: 500px;
+}
+
+.meme img {
+    max-height: 600px;
+    max-width: 500px;
+}
