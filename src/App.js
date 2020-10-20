@@ -11,7 +11,6 @@ import './App.css';
  * - create a gallery for meme templates
  * - style
  * - create routing for 'About' and 'Contact'
- * - create header, main, footer
  * - credit https://imgflip.com/api
  */
 
