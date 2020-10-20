@@ -3,7 +3,8 @@ import qs from 'qs';
 import './App.css';
 
 /**
- * TODO: - put 'top' and 'bottom' in a dictionary
+ * TODO: - check box_count and display as many inputs as necessary
+ * - put 'top' and 'bottom' in a dictionary
  * - refactor into components
  * - change and save username and password into .env
  * - create a gallery for meme templates
