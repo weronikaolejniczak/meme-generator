@@ -1,17 +1,17 @@
 import React from 'react';
+import {Gallery} from '../';
 import './style.css';
 
-const Templates = ({templates, handleClick}) => {
+const Templates = ({templates, selectedId, handleClick}) => {
     return (
         <div className="templates">
-            {templates.map((elem) => (
-                <img
-                    key={elem.id}
-                    onClick={() => handleClick(elem.id)}
-                    src={elem.url}
-                    alt={elem.name}
-                />
-            ))}
+            <h2>Pick a template</h2>
+            <strong>Selected meme template:</strong> {selectedId}
+
+            <Gallery
+                templates={templates}
+                handleClick={handleClick}
+            />
       </div>
     );
 }

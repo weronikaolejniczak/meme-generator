@@ -72,9 +72,13 @@ function App() {
       <Header />
 
       <div className="App__main">
-        <h2>Pick a template</h2>
-        <strong>Selected meme template:</strong> {selectedId}
-        {templates && (<Templates templates={templates} handleClick={handleClick} />)}
+        {templates && (
+          <Templates
+            templates={templates}
+            selectedId={selectedId}
+            handleClick={handleClick}
+          />
+        )}
 
         <h2>Enter upper and bottom text</h2>
         <Form

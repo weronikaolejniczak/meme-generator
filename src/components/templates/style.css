@@ -1,11 +1,5 @@
 .templates {
-    width: 100%;
-    margin: auto;
-  }
-
-.templates img {
-    width: 150px;
-    height: auto;
-    border: #000 1px solid;
-    cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
