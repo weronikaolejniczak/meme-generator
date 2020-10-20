@@ -70,7 +70,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header className="App__header" />
+      <Header />
 
       <div className="App__main">
         <h2>Pick a template</h2>
@@ -88,7 +88,7 @@ function App() {
         {meme && (<Meme source={meme.url} />)}
       </div>
 
-      <Footer className="App__footer" />
+      <Footer />
     </div>
   );
 }
