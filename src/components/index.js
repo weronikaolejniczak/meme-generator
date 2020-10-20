@@ -4,4 +4,6 @@ import Form from './form';
 import Meme from './meme';
 import Templates from './templates';
 
-export {Header, Form, Meme, Templates};
+import Footer from './footer';
+
+export {Header, Form, Meme, Templates, Footer};

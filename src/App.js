@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import qs from 'qs';
 
-import {Header, Form, Meme, Templates} from './components';
+import {Header, Form, Meme, Templates, Footer} from './components';
 import './App.css';
 
 /**
@@ -88,7 +88,7 @@ function App() {
         {meme && (<Meme source={meme.url} />)}
       </div>
 
-      {/* <Footer className="App__footer" /> */}
+      <Footer className="App__footer" />
     </div>
   );
 }
