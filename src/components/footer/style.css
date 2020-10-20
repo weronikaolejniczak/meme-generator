@@ -1,3 +1,15 @@
 .footer {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    color: #ffffff;
+}
 
+.footer .footer__content {
+    padding-left: 25px;
+    padding-right: 25px;
 }

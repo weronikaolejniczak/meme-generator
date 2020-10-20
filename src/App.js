@@ -72,23 +72,27 @@ function App() {
       <Header />
 
       <div className="App__main">
-        {templates && (
-          <Templates
-            templates={templates}
-            selectedId={selectedId}
-            handleClick={handleClick}
+        <div className="App__user-input">
+          {templates && (
+            <Templates
+              templates={templates}
+              selectedId={selectedId}
+              handleClick={handleClick}
+            />
+          )}
+
+          <h2>Enter upper and bottom text</h2>
+          <Form
+            handleSubmit={handleSubmit}
+            handleChange={handleChange}
+            values={[upperText, bottomText]}
           />
-        )}
+        </div>
 
-        <h2>Enter upper and bottom text</h2>
-        <Form
-          handleSubmit={handleSubmit}
-          handleChange={handleChange}
-          values={[upperText, bottomText]}
-        />
-
-        <h2>Generated meme</h2>
-        {meme && (<Meme source={meme.url} />)}
+        <div className="App__meme">
+          <h2>Generated meme</h2>
+          {meme && (<Meme source={meme.url} />)}
+        </div>
       </div>
 
       <Footer />

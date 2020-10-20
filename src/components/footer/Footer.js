@@ -4,7 +4,9 @@ import './style.css';
 const Footer = () => {
     return (
         <footer className="footer">
-            <h1>Bye</h1>
+            <div className="footer__content">
+                <span className="author">Made by Weronika Olejniczak</span>
+            </div>
         </footer>
     );
 }
