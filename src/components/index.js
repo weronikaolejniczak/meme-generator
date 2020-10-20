@@ -1,5 +1,7 @@
+import Header from './header';
+
 import Form from './form';
 import Meme from './meme';
 import Templates from './templates';
 
-export {Form, Meme, Templates};
+export {Header, Form, Meme, Templates};

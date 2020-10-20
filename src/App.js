@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import qs from 'qs';
 
-import {Form, Meme, Templates} from './components';
+import {Header, Form, Meme, Templates} from './components';
 import './App.css';
 
 /**
@@ -12,6 +12,7 @@ import './App.css';
  * - style
  * - create routing for 'About' and 'Contact'
  * - create header, main, footer
+ * - credit https://imgflip.com/api
  */
 
 function App() {
@@ -69,19 +70,25 @@ function App() {
 
   return (
     <div className="App">
-      <h2>Pick a template</h2>
-      <strong>Selected meme template:</strong> {selectedId}
-      {templates && (<Templates templates={templates} handleClick={handleClick} />)}
+      <Header className="App__header" />
 
-      <h2>Enter upper and bottom text</h2>
-      <Form
-        handleSubmit={handleSubmit}
-        handleChange={handleChange}
-        values={[upperText, bottomText]}
-      />
+      <div className="App__main">
+        <h2>Pick a template</h2>
+        <strong>Selected meme template:</strong> {selectedId}
+        {templates && (<Templates templates={templates} handleClick={handleClick} />)}
 
-      <h2>Generated meme</h2>
-      {meme && (<Meme source={meme.url} />)}
+        <h2>Enter upper and bottom text</h2>
+        <Form
+          handleSubmit={handleSubmit}
+          handleChange={handleChange}
+          values={[upperText, bottomText]}
+        />
+
+        <h2>Generated meme</h2>
+        {meme && (<Meme source={meme.url} />)}
+      </div>
+
+      {/* <Footer className="App__footer" /> */}
     </div>
   );
 }
