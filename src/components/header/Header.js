@@ -1,10 +1,19 @@
 import React from 'react';
+import './style.css';
 
 const Header = () => {
     return (
-        <div className="App__header">
-            <h1>Hello</h1>
-        </div>
+        <header className="header">
+            <div className="header__logo">
+                <h1>Hello</h1>
+            </div>
+            <nav className="header__menu">
+                <ul>
+                    <li>Hello</li>
+                    <li>World</li>
+                </ul>
+            </nav>
+        </header>
     );
 }
 
