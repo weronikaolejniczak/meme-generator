@@ -1,6 +1,6 @@
 .gallery {
     display: flex;
-    overflow-x: auto;
+    overflow-x: scroll;
     padding: 15px;
     border: #666 2px solid;
 }
