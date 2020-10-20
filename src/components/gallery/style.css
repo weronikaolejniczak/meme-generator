@@ -13,3 +13,9 @@
     border: #999 2px solid;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 1024px) {
+    .gallery {
+        width: 300px;
+    }
+}
