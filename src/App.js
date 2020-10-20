@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import qs from 'qs';
 
-import {Header, Form, Meme, Templates, Footer} from './components';
+import {Header, Hero, Form, Meme, Templates, Footer} from './components';
 import './App.css';
 
 /**
@@ -65,28 +65,31 @@ function App() {
   return (
     <div className="app">
       <Header />
+      <Hero />
 
       <div className="main">
-        <div className="user-input">
-          {templates && (
-            <Templates
-              templates={templates}
-              selectedId={selectedId}
-              handleClick={handleClick}
+        <div className="meme-creator">
+          <div className="user-input">
+            {templates && (
+              <Templates
+                templates={templates}
+                selectedId={selectedId}
+                handleClick={handleClick}
+              />
+            )}
+
+            <h3>Enter upper and bottom text</h3>
+            <Form
+              handleSubmit={handleSubmit}
+              handleChange={handleChange}
+              values={[upperText, bottomText]}
             />
-          )}
+          </div>
 
-          <h2>Enter upper and bottom text</h2>
-          <Form
-            handleSubmit={handleSubmit}
-            handleChange={handleChange}
-            values={[upperText, bottomText]}
-          />
-        </div>
-
-        <div className="meme-container">
-          <h2>Generated meme</h2>
-          {meme ? (<Meme source={meme.url} />) : (<div className="placeholder" />)}
+          <div className="meme-container">
+            <h3>Generated meme</h3>
+            {meme ? (<Meme source={meme.url} />) : (<div className="placeholder" />)}
+          </div>
         </div>
       </div>
 

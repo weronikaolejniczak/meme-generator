@@ -1,4 +1,5 @@
 import Header from './header';
+import Hero from './hero';
 
 import Form from './form';
 import Meme from './meme';
@@ -7,4 +8,4 @@ import Gallery from './gallery';
 
 import Footer from './footer';
 
-export {Header, Form, Meme, Templates, Gallery, Footer};
+export {Header, Hero, Form, Meme, Templates, Gallery, Footer};

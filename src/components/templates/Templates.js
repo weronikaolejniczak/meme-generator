@@ -5,8 +5,7 @@ import './style.css';
 const Templates = ({templates, selectedId, handleClick}) => {
     return (
         <div className="templates">
-            <h2>Pick a template</h2>
-            <strong>Selected meme template:</strong> {selectedId}
+            <h3>Pick a template</h3>
 
             <Gallery
                 templates={templates}

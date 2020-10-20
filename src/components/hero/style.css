@@ -1,0 +1,31 @@
+.hero {
+    height: calc(100vh - 80px);
+    width: 100%;
+    background-image: url('../../assets/bg.jpg');
+    background-size: cover;
+}
+
+.hero-overlay {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.hero .slogan-container {
+    position: absolute;
+    left: 5vw;
+}
+
+.hero .slogan-container h1 {
+    color: #ffffff;
+    font-size: 86px;
+    text-shadow: 4px 4px 2px #222222;
+}
+
+.hero .slogan-container h2 {
+    color: #ffffff;
+    font-size: 36px;
+    text-shadow: 2px 2px 1px #222222;
+}
