@@ -1,15 +1,1 @@
-.App {
-  text-align: center;
-}
-
-.meme-container {
-  width: 100%;
-  margin: auto;
-}
-
-.meme-container img {
-  width: 150px;
-  height: auto;
-  border: #000 1px solid;
-  cursor: pointer;
-}
+.App {}

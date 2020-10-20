@@ -1,8 +1,9 @@
 import React from 'react';
+import './style.css';
 
 const Templates = ({templates, handleClick}) => {
     return (
-        <div className="meme-container">
+        <div className="templates">
             {templates.map((elem) => (
                 <img
                     key={elem.id}
