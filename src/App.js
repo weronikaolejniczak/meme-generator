@@ -5,7 +5,7 @@ import {Form, Meme, Templates} from './components';
 import './App.css';
 
 /**
- * TODO: - check box_count and display as many inputs as necessary
+ * TODO:
  * - put 'top' and 'bottom' in a dictionary
  * - change and save username and password into .env
  * - create a gallery for meme templates
@@ -25,7 +25,10 @@ function App() {
   useEffect(() => {
     fetch('https://api.imgflip.com/get_memes')
       .then(res => res.json())
-      .then(json => setTemplates(json.data.memes))
+      .then(json => {
+        const filteredTemplates = json.data.memes.filter(elem => elem.box_count === 2);
+        setTemplates(filteredTemplates);
+      })
   }, []);
 
   const handleChange = (event) => {
