@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import qs from 'qs';
+
+import {Form} from './components';
 import './App.css';
 
 /**
@@ -67,11 +69,11 @@ function App() {
     <div className="App">
       {error}
       Selected meme template: {selectedId}
-      <form onSubmit={handleSubmit} >
-        <input type="text" name="top" value={upperText} onChange={handleChange} />
-        <input type="text" name="bottom" value={bottomText} onChange={handleChange} />
-        <input type="submit" value="Generate meme"/>
-      </form>
+      <Form
+        handleSubmit={handleSubmit}
+        handleChange={handleChange}
+        values={[upperText, bottomText]}
+      />
       <div className="meme">
         {meme && (<img src={meme.url} alt="Generated meme" />)}
       </div>
